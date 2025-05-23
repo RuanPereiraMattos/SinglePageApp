@@ -15,8 +15,8 @@ class Main : AppCompatActivity(R.layout.act_main) {
         val title: TextView = findViewById(R.id.title)
 
         val clickListener = View.OnClickListener {
-            title.text = "$counter times clicked!"
             counter++
+            title.text = "$counter times clicked!"
         }
 
         linearLayout.setOnClickListener(clickListener)
