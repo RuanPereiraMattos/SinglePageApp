@@ -13,11 +13,7 @@ class Main : AppCompatActivity(R.layout.act_main) {
         val linearLayout: LinearLayout = findViewById(R.id.linear_layout)
         val title: TextView = findViewById(R.id.title)
 
-        val clickListener = object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                title.text = "Well done! Button Clicked!"
-            }
-        }
+        val clickListener = View.OnClickListener { title.text = "Well done! Button Clicked!" }
 
         linearLayout.setOnClickListener(clickListener)
     }
