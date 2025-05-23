@@ -10,10 +10,14 @@ class Main : AppCompatActivity(R.layout.act_main) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        var counter = 0
         val linearLayout: LinearLayout = findViewById(R.id.linear_layout)
         val title: TextView = findViewById(R.id.title)
 
-        val clickListener = View.OnClickListener { title.text = "Well done! Button Clicked!" }
+        val clickListener = View.OnClickListener {
+            title.text = "$counter times clicked!"
+            counter++
+        }
 
         linearLayout.setOnClickListener(clickListener)
     }
