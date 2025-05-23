@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SinglePageApp</string>
+    <string name="title">Single Page App</string>
 </resources>
