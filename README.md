@@ -1,2 +1,2 @@
 # SinglePageApp
-Single page app just created with no main activity and no layout xml
+Android single page app with Main Activity with a simple act_main.xml with only a TextView with app title and when the user taps it, a "counter" start counting the taps and show how many times the page has been clicked
